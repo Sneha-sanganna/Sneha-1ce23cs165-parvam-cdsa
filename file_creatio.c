@@ -1,0 +1,11 @@
+#include<stdio.h>
+int main(){
+    FILE*file=fopen("example.txt","w");
+    if(file==NULL){
+        printf("Error creating files.\n");
+        return 1;
+    }
+    printf("File created successfully.\n");
+    fclose(file);
+    return 0;
+}
